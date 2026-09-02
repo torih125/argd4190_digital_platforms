@@ -47,7 +47,7 @@
      </div>
 </body>
 <header></header>
-    <h1 style="text-align: center; margin-top: 60px; margin-bottom: 130px;">Sharks in Film</h1>
+    <h1 style="text-align: center; margin-top: 4rem; margin-bottom: 4rem;">Sharks in Film</h1>
     <img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/bruce.jpg">
     <p style="text-align: center; margin-top: 10px;">Bruce</p>
     <img style="display: block; margin: 0 auto; margin-top: 130px; width: 600px; height: 400px;" src="assets/jaws.jpg">
@@ -58,3 +58,32 @@
     <p style="text-align: center; margin-top: 10px;">Chum</p>
     <img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/babyshark.jpg">
     <p style="text-align: center; margin-top: 10px;">Baby Shark</p>
+
+<div class="container">
+    <div class="box">Box1
+    </div>
+    <div class="box">Box2
+    </div>
+    <div class="box">Box3
+    </div>
+    <div class="box">Box4
+    </div>
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+        justify-items: space-evenly;
+        align-items: center;
+    }
+
+    .box {
+        background-color: rgb(169, 209, 243);
+        padding: 15px;
+        justify-items: center;
+        text-align: center;
+    }
+</style>

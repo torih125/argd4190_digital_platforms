@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sharks of the Week</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <meta name="description" content="Directory of shark species and facts">
+
 </head>
 <body>
-    
 </body>
 </html>
+
  <style>
         #parent-div {
             background-color: rgb(169, 209, 243); padding: 8px;
@@ -45,23 +48,52 @@
             <li style="display: inline;"><a href="sharksinfilm.html">In Film</a></li>
         </ul>
      </div>
-<header></header>
-<div>
-    <h1 style="text-align: center; margin-bottom: 130px; margin-top: 60px;">Shark Species</h1>
-<img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/hammerhead.jpg">
-    <p style="text-align: center; margin-top: 10px;">Hammerhead Shark</p>
-<img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/greatwhite.jpg">
-    <p style="text-align: center; margin-top: 10px;">Great White Shark</p>
-<img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/nurseshark.jpg">
-    <p style="text-align: center; margin-top: 10px;">Nurse Shark</p>
-<img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/lemonshark.jpg">
-    <p style="text-align: center; margin-top: 10px;">Lemon Shark</p>
-<img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/blacktipreefshark.jpg">
-    <p style="text-align: center; margin-top: 10px;">Blacktip Reef Shark</p>
-<img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/bonnethead.jpg">
-    <p style="text-align: center; margin-top: 10px;">Bonnethead Shark</p>
-<img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/tasselledwobbegong.jpg">
-    <p style="text-align: center; margin-top: 10px;">Tasselled Wobbegong</p>
-<img style="display: block; margin: 0 auto; margin-top: 130px;" src="assets/baskingshark.jpg">
-    <p style="text-align: center; margin-top: 10px;">Basking Shark</p>  
+
+<header>
+<h1 style="text-align: center; margin-bottom: 4rem; margin-top: 4rem;">Shark Species</h1>
+</header>
+
+<div class="container">
+    <div class="box">Hammerhead Shark
+     <img style="display: grid; margin: 0 auto; margin-top: 1.5rem; width: 100%; height: 100%;" alt="Hammerhead shark head-on to camera with open mouth" src="assets/hammerhead.jpg">   
+    </div>
+    <div class="box">Great White Shark
+     <img style="display: grid; margin: 0 auto; margin-top: 1.5rem; width: 100%; height: 100%;" alt="Great white shark swimming towards camera in ocean" src="assets/greatwhite.jpg">
+    </div>
+    <div class="box">Nurse Shark
+     <img style="display: grid; margin: 0 auto; margin-top: 1.5rem; width: 100%; height: 100%;" alt="Nurse shark swimming towards camera in ocean" src="assets/nurseshark.jpg">
+    </div>
+    <div class="box">Lemon Shark
+     <img style="display: grid; margin: 0 auto; margin-top: 1.5rem; width: 100%; height: 100%;" alt="3/4 sideways view of lemon shark in ocean" src="assets/lemonshark.jpg">
+    </div>
+    <div class="box">Black Tip Reef Shark
+     <img style="display: grid; margin: 0 auto; margin-top: 1.5rem; width: 100%; height: 100%;" alt="Sideways view of black tip reef shark swimming toward ocean surface with fish" src="assets/blacktipreefshark.jpg">
+    </div>
+    <div class="box">Bonnethead Shark
+     <img style="display: grid; margin: 0 auto; margin-top: 1.5rem; width: 100%; height: 100%;" alt="Bonnethead shark swimming upwards in tank" src="assets/bonnethead.jpg">
+    </div>
+    <div class="box">Tasselled Wobbegong
+     <img style="display: grid; margin: 0 auto; margin-top: 1.5rem; width: 100%; height: 100%;" alt="Tasselled wobbegong shark camoflauging on ocean floor" src="assets/tasselledwobbegong.jpg">
+    </div>
+    <div class="box">Basking Shark
+     <img style="display: grid; margin: 0 auto; margin-top: 1.5rem; width: 100%; height: 100%;" alt="Basking shark swimming near ocean surface with mouth open" src="assets/baskingshark.jpg">
+    </div>
 </div>
+
+<style>
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-items: space-evenly;
+    align-items: center;
+}
+.box {
+    background-color: rgb(169, 209, 243);
+    padding: 15px;
+    justify-items: center;
+    text-align: center;
+}
+</style>
+

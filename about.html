@@ -58,3 +58,48 @@
         font-family: "Montserrat", sans-serif;
     }
 </style>
+<div class="container">
+    <div class="box nav">nav</div>
+    <div class="box main">main</div>
+    <div class="box sidebar">sidebar</div>
+    <div class="box footer">footer</div>
+</div>
+<style>
+    .container {
+        border: 1px solid black;
+        display: grid;
+        grid-template-areas: 
+           "nav nav nav nav"
+           "main main . sidebar"
+           "footer footer footer footer";
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .box { 
+        border: 1px solid black;
+        padding: 20px;
+        background-color: rgb(169, 209, 243);
+    }
+   
+    .nav {
+        grid-area: nav;
+    }
+
+    .main {
+        grid-area: main;
+        min-height: 200px;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+</style>
